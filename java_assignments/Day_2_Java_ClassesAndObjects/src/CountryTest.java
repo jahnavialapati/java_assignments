@@ -5,29 +5,32 @@ import org.junit.Test;
 
 
 public class CountryTest {
-	Country country1;
-    Country country2;
-	Country country3;
+	Country countryOne;
+    Country countryTwo;
+	Country countryThree;
 	@Before
 	public void setUp(){
-		country1=new Country("India",120000000,2476853);
-		country2=new Country("China",360000000,2287469);
-		country3=new Country("America",9600000,3287469);
+		countryOne=new Country("India",120000000,2476853);
+		countryTwo=new Country("China",360000000,2287469);
+		countryThree=new Country("America",9600000,3287469);
 	}
 	@Test
 	public void countryWithLargestArea() {
 		String expectedResult="America"; 
-		String answer=Country.largestArea(country1,country2,country3);
+		String answer=Country.largestArea(countryOne,countryTwo,countryThree);
 		assertEquals(expectedResult,answer);
 	}
 	@Test
 	public void countryWithLargestPopulation() {
 		String expectedResult="China";
-		String answer=Country.largestPopulation(country1,country2,country3);
+		String answer=Country.largestPopulation(countryOne,countryTwo,countryThree);
 		assertEquals(expectedResult,answer);
 	}
 	@Test
 	public void countryWithLargestPopulationDensity(){
-		
+		String expectedResult="America";
+		String answer=Country.largestDensity(countryOne,countryTwo,countryThree);
+		assertEquals(expectedResult,answer);
+
 	}
 }

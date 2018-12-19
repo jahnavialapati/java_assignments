@@ -1,7 +1,9 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 public class Date {
-	private int date,month,year; 							
+	int date;
+	int month;
+	private int year; 							
 	public Date(int date, int month, int year) {			
 		this.date = date;
 		this.month = month;									 
