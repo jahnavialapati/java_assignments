@@ -10,22 +10,20 @@ public class TimeTest {
 	@Before
 	public void setUp(){
 		time = new Time(10,20);
-		time1 = new Time(14,60);
-		time2 = new Time(10,20);
-		time3 = new Time(5,60);
+		time1 = new Time(16,60);
+		time2 = new Time(7,60);
+		time3 = new Time(7,40);
 	}
 	@Test
 	public void test() {
-		String expectedResult="addition of hours cannot be more than 24 hours in a day";
-		Time answer = Time.sum(time, time1);
-		answer.showTime();
-		assertEquals(expectedResult, "addition of hours cannot be more than 24 hours in a day");
+		Time answer = Time.sumOfTime(time, time1);
+		answer.displayTime();
+		assertEquals("addition of hours shouldn't be more than 24 hours in a day", "addition of hours shouldn't be more than 24 hours in a day");
 	}
 	@Test
 	public void test1() {
-		String expectedResult="16 hrs 20 min";
-		Time answer = Time.sum(time2, time3);
-		answer.showTime();
-		assertEquals(expectedResult,answer.hours+" hrs "+answer.minutes+" min");
+		Time answer = Time.sumOfTime(time2, time3);
+		answer.displayTime();
+		assertEquals("15 hrs 40 min",answer.hours+" hrs "+answer.minutes+" min");
 	}
 }

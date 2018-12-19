@@ -9,13 +9,13 @@ public class Time {
 
 
 	}
-	public static Time sum(Time time, Time time1) {
+	public static Time sumOfTime(Time time, Time time1) {
 		Time result = new Time();
 		result.hours=time.hours+time1.hours;
 		if(result.hours>=24){
 			System.out.println("addition of hours cannot be more than 24 hours in a day");
 		}
-			else{
+		else{
 		 result.hours = time.hours+time1.hours;
 		}
 		result.minutes=time.minutes+time1.minutes;
@@ -28,7 +28,7 @@ public class Time {
 		}
 		return result;
 	}
-	public void showTime(){
+	public void displayTime(){
 		System.out.println(hours+" hrs "+minutes+" min");
 	}
 }
