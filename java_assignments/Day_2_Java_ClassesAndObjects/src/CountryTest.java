@@ -1,8 +1,10 @@
 import static org.junit.Assert.*;
 
-import org.junit.Before;
-import org.junit.Test;
 
+
+import org.junit.Before;
+
+import org.junit.Test;
 
 public class CountryTest {
 	Country countryOne;
@@ -31,6 +33,5 @@ public class CountryTest {
 		String expectedResult="America";
 		String answer=Country.largestDensity(countryOne,countryTwo,countryThree);
 		assertEquals(expectedResult,answer);
-
 	}
 }

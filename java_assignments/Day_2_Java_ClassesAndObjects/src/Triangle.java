@@ -9,8 +9,10 @@ public class Triangle {
 		this.angle2 = angle2;
 		this.angle3 = angle3;
 	}
-	
+
 	public Triangle() {
+
+
 
 	}
 

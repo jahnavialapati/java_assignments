@@ -1,4 +1,3 @@
-
 import java.time.LocalDate;
 
 import java.time.Period;
@@ -6,13 +5,12 @@ import java.time.Period;
 import java.util.*;
 
 public class Person {
-
 	private String name;
 	private Date dob;
 	private int date;
 	private int month;
 	private int year;
-
+	
 	public String getName() {
 		return name;
 	}
@@ -55,8 +53,10 @@ public class Person {
 
 	public Person() {
 
-	}
 
+
+	}
+	
 	public void display()
 	{	
 		LocalDate personDob = LocalDate.of(1991,10,15);
@@ -79,4 +79,3 @@ public class Person {
 		}
 	}
 }
-

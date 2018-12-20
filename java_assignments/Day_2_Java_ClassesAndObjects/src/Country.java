@@ -1,26 +1,32 @@
-
 public class Country {
 	private String nameOfTheCountry;
 	private int population;
     private double area;
+
 	public Country(String nameOfTheCountry, int population, double area) {
 		this.nameOfTheCountry=nameOfTheCountry;
 		this.population=population;
 		this.area=area;
 	}
+
 	public Country(){
-		
-	}
+
 	
+
+	}
+
 	public int getPopulation() {
 		return population;
 	}
+
 	public void setPopulation(int population) {
 		this.population = population;
 	}
+
 	public double getArea() {
 		return area;
 	}
+
 	public void setArea(double area) {
 		this.area = area;
 	}
@@ -37,7 +43,7 @@ public class Country {
 		else
 			return countryThree.nameOfTheCountry;
 	}
-	
+
 	public static String largestPopulation(Country countryOne, Country countryTwo,Country countryThree) {
 		if(countryOne.population>countryTwo.population && countryOne.population>countryThree.population)
 		{
@@ -49,9 +55,8 @@ public class Country {
 		}
 		else
 			return countryThree.nameOfTheCountry;
-		
 	}
-	
+
 	public static String largestDensity(Country countryOne, Country countryTwo,Country countryThree) {
 		double countryOneDensity=countryOne.population/countryOne.area;
 		double countryTwoDensity=countryTwo.population/countryTwo.area;
