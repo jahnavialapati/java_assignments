@@ -1,14 +1,14 @@
 package com.cg.inheritance;
 
 public class CorporateTraining extends Training{
-
-	public CorporateTraining(String subject, int fees) {
+	private int noOfDays;
+	public CorporateTraining(String subject, int fees,int noOfDays) {
 		super(subject, fees);
+		this.noOfDays=noOfDays;
 	}
 
 	@Override
-	public int getOrderValue() {
-		int noOfDays=4;
+	public int getOrderValue() {	
 		return getFees()*noOfDays;
 	}
 	
