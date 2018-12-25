@@ -10,18 +10,18 @@ public class TrainingTest {
 	private Training corporateTraining;
 	@Before
 	public void setUp(){
-		publicTraining=new PublicTraining("JAVA", 5000);
-		corporateTraining=new CorporateTraining("Big Data", 3500);
+		publicTraining=new PublicTraining("JAVA", 5000,5);
+		corporateTraining=new CorporateTraining("Big Data", 3500,50);
 	}
 	@Test
 	public void costOfJavaTraining() {
-		int expectedValue=250000;
+		int expectedValue=25000;
 		int result=publicTraining.getOrderValue();
 		assertEquals(expectedValue,result);
 	}
 	@Test
 	public void costOfBigDataTraining() {
-		int expectedValue=14000;
+		int expectedValue=175000;
 		int result=corporateTraining.getOrderValue();
 		assertEquals(expectedValue,result);
 	}
