@@ -17,8 +17,6 @@ public class StudentMapTest {
 		map.put("siva","strawberry");
 		map.put("janu","orange");
 		
-		/*System.out.println(map);
-		
 		if(map.containsKey("jahnavi"))
 		{
 			String fruit=map.get("jahnavi");
@@ -28,7 +26,7 @@ public class StudentMapTest {
 		{
 			String fruit=map.get("siva");
 			System.out.println("favourite fruit for siva is: "+fruit);
-		}*/
+		}
 		
 		String expected="{jahnavi=apple, siva=strawberry, ram=banana, janu=orange}";
 		assertEquals(expected,map.toString());
