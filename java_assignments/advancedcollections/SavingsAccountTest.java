@@ -30,7 +30,7 @@ import org.junit.Test;
 
 public class SavingsAccountTest {
 	private SavingsAccount savingsAccountOne,savingsAccountTwo,savingsAccountThree,savingsAccountFour,
-							savingsAccountFive,savingsAccountSix,savingsAccountSeven;
+							savingsAccountFive;
 	private BankAccountList bankAccountList;
 	List<SavingsAccount> al = new ArrayList<SavingsAccount>();
 	
